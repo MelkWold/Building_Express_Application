@@ -1,6 +1,7 @@
 // Import relevant packages
 import express from "express";
 import routes from "./routes/routes.mjs";
+import { loggerFunc } from "./middleware/logger.mjs";
 const PORT = 3000;
 
 // Set up express
@@ -8,6 +9,7 @@ const app = express();
 
 // Middleware
 app.use(express.json());
+app.use(loggerFunc)
 
 // user routes
 // app.use("/", routes)
@@ -44,6 +46,7 @@ app.use(express.static("./styles"));
     })
 
 
+// Middleware
 
 
 
