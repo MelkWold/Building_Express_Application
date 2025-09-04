@@ -8,3 +8,4 @@
 `I will include a basic form in at least one view that sends a POST request to a route within my application. For now, just log that data to the console within my route and send a simple "success" response. I will nclude at least one instance of a route parameter that modifies what is rendered to the client.`
 
 ## Part 2: Middleware
+`Within my application, I will create a piece of middleware, or for some practical purpose, I will use third-party middleware. This can be as simple as logging specific request data; however, it will benefit you to find a more interesting use case for practice purposes or to research third-party middleware.`
