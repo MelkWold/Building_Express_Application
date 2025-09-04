@@ -11,8 +11,8 @@ const app = express();
 app.use(express.json());
 app.use(loggerFunc)
 
-// user routes
-// app.use("/", routes)
+// user routes: this can be used if needed.
+// app.use("/", routes) 
 
 // Using static styles
 app.use(express.static("./styles"));
@@ -44,15 +44,6 @@ app.use(express.static("./styles"));
     app.get("/countriesVisited", (req, res) => {
         res.render("countriesVisited");
     })
-
-
-// Middleware
-
-
-
-
-
-
 
 // Listen
 app.listen(PORT, () => {
